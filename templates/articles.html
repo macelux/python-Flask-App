@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div>
+    <h2>hello </h2>
+    <p>
+    {% for data in articles %}
+    <li> <a href="article/{{ data.id}}"> {{ data.title}}</a></li>
+    {% endfor %}
+    </p>
+</div>
+{% endblock %}
